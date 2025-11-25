@@ -1,0 +1,25 @@
+.progress-bar-top-header{
+  text-align: center;
+}
+
+.outer-container{
+  width: 70%;
+  height: 50px;
+  border: 1px solid black;
+  margin: auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.inner-container{
+  height: 50px;
+  /* background-color: rgb(33, 177, 33); */
+  color: white;
+  font: bold;
+  font-size: larger;
+  /* width: 50%; */
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  transition: ease-in 1s;
+}
