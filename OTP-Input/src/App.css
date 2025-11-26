@@ -1,0 +1,30 @@
+.otp-input-box{
+    height: 500px;
+    font-size:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.otp-input-box > input{
+    width: 100px;
+    height: 40px;
+    font-size: 30px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.otp-input-box > input:focus{
+    outline: none;
+    border: 2px solid red;
+}
+
+.success-msg-div{
+    text-align: center;
+}
+
+.heading-otp{
+    text-align: center;
+}
