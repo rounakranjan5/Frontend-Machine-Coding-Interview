@@ -29,7 +29,7 @@ const OtpInput = () => {
         if (newOtpArr.length === OTP_LENGTH && !newOtpArr.includes("")) {
             setSuccessMsg("OTP Validated Successfully!")
         }
-        inpRef?.[ind + 1]?.focus()
+        inpRef.current?.[ind + 1]?.focus()
     }
 
     const handleKeyDown = (e, ind) => {
@@ -40,7 +40,7 @@ const OtpInput = () => {
             newOtpArr.splice(ind, 1, "")
             setOtpArr(newOtpArr)
             setSuccessMsg("")
-            inpRef?.[ind - 1]?.focus()
+            inpRef.current?.[ind - 1]?.focus()
         }
     }
 
@@ -66,18 +66,18 @@ const OtpInput = () => {
         setOtpArr(newOtpArr)
 
         if (currInd >= OTP_LENGTH) {
-            inpRef?.[OTP_LENGTH - 1]?.focus()
+            inpRef.current?.[OTP_LENGTH - 1]?.focus()
             if (newOtpArr.length === OTP_LENGTH && !newOtpArr.includes("")) {
                 setSuccessMsg("OTP Validated Successfully!")
             }
         }
 
-        inpRef?.[currInd]?.focus()
+        inpRef.current?.[currInd]?.focus()
 
     }
 
     useEffect(() => {
-        inpRef?.[0]?.focus()
+        inpRef.current?.[0]?.focus()
     }, [])
 
     return (
@@ -86,7 +86,7 @@ const OtpInput = () => {
                 {
                     otpArr.map((otp, index) => {
                         return (
-                            <input type="text" key={index} value={otp} onChange={(e) => handleChange(e, index)} ref={(ele) => inpRef[index] = ele} onKeyDown={(e) => handleKeyDown(e, index)} onPaste={(e) => handlePaste(e, index)} aria-label="Otp input" pattern="[0-9]"></input>
+                            <input type="text" key={index} value={otp} onChange={(e) => handleChange(e, index)} ref={(ele) => inpRef.current[index] = ele} onKeyDown={(e) => handleKeyDown(e, index)} onPaste={(e) => handlePaste(e, index)} aria-label="Otp input" pattern="[0-9]"></input>
                         )
                     })
                 }
