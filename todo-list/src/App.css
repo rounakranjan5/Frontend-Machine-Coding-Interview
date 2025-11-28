@@ -1,0 +1,59 @@
+.todo-inp-div{
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+.todo-inp{
+  width: 40%;
+  height: 30px;
+  padding: 5px;
+  font-size: large;
+  border: 1px solid gray;
+  border-radius: 30px;
+  padding-left: 12px;
+}
+
+.todo-item-div{
+  border: 1px solid gray;
+  width: 40%;
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.todo-item-div > li{
+  list-style-type: none;
+  font-size: medium;
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-btn{
+  margin-left: 20px;
+  cursor: pointer;
+  background-color: lightgreen;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 10px;
+}
+
+.add-btn{
+  cursor: pointer;
+  padding: 6px 15px;
+  margin-left: 4px;
+  border-radius: 30px;
+  border: none;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  width: 41%;
+}
+
+.strike{
+  text-decoration: line-through;
+}
