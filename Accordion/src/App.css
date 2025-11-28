@@ -1,0 +1,22 @@
+.item-div{
+  border: 1px solid gray;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.title{
+  font-weight: bolder;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 15px;
+  background-color: rgba(128, 128, 128, 0.876);
+  margin: 0;
+  border-bottom: 1px solid gray;
+}
+
+.item-content{
+  padding: 12px;
+  background-color: #fafafa;
+  border: none;
+  border-top: 0;
+}
